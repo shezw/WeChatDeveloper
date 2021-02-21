@@ -122,6 +122,8 @@ class We
     {
         if (substr($name, 0, 6) === 'WeChat') {
             $class = 'WeChat\\' . substr($name, 6);
+        } elseif (substr($name, 0, 6) === 'WeOpen') {
+            $class = 'WeOpen\\' . substr($name, 6);
         } elseif (substr($name, 0, 6) === 'WeMini') {
             $class = 'WeMini\\' . substr($name, 6);
         } elseif (substr($name, 0, 6) === 'AliPay') {
